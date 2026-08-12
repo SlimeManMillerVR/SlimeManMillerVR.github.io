@@ -22,7 +22,6 @@
             overflow-y: auto;
         }
 
-        //
         .top {
             height: 35vh;
             min-height: 280px;
@@ -45,42 +44,36 @@
             font-weight: bold;
         }
 
-        //
         .buttons {
             display: flex;
             flex-direction: column;
             align-items: center;
-            gap: 18px;
+            gap: 25px;
             margin-top: 90px;
         }
 
-        .button-title {
-            color: black;
-            font-size: 28px;
-            font-weight: bold;
-            margin-bottom: -5px;
-        }
-
-        //
-        .youtube-box,
-        .second-box {
+        .button {
             width: 280px;
             height: 140px;
             background: #718b78;
             border-radius: 15px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            color: white;
+            font-size: 28px;
+            font-weight: bold;
+            text-decoration: none;
+
             cursor: pointer;
             transition: transform 0.2s, background 0.2s;
         }
 
-        .youtube-box:hover,
-        .second-box:hover {
+        .button:hover {
             transform: scale(1.05);
             background: #809b87;
-        }
-
-        //
-        .second-box {
-            cursor: pointer;
         }
     </style>
 </head>
@@ -93,13 +86,15 @@
 
     <div class="buttons">
 
-        <div class="button-title">YOUTUBE</div>
-
-        <a href="https://www.youtube.com/@SlimeManMillerVR" target="_blank">
-            <div class="youtube-box"></div>
+        <!-- YouTube -->
+        <a class="button" href="https://www.youtube.com/@SlimeManMillerVR" target="_blank">
+            YOUTUBE
         </a>
 
-        <div class="second-box"></div>
+        <!-- Discord -->
+        <div class="button">
+            DISCORD
+        </div>
 
     </div>
 
