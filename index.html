@@ -17,8 +17,8 @@
             background: #5f9f55;
         }
 
-        .top,
-        .bottom {
+        /*  */
+        .top {
             height: 35vh;
             background: linear-gradient(
                 #205f2c,
@@ -38,6 +38,7 @@
             font-weight: bold;
         }
 
+        /*  */
         .buttons {
             display: flex;
             flex-direction: column;
@@ -70,19 +71,35 @@
             transform: scale(1.05);
             background: #809b87;
         }
+
+        /*  - 180°  */
+        .bottom {
+            height: 35vh;
+            background: linear-gradient(
+                #5f9f55,
+                #3f833f,
+                #286b32,
+                #205f2c
+            );
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
     </style>
 </head>
 
 <body>
 
-    <!-- Üst bölüm -->
+    <!--  -->
     <div class="top">
         <div class="title">SlimeManMillerVR</div>
     </div>
 
-    <!-- Butonlar -->
+    <!--  -->
     <div class="buttons">
 
+        <!-- YOUTUBE -->
         <a
             class="button"
             href="https://www.youtube.com/@SlimeManMillerVR"
@@ -91,6 +108,7 @@
             YOUTUBE
         </a>
 
+        <!-- DISCORD -->
         <a
             class="button"
             href="https://discord.gg/uGurHm6sd"
@@ -101,7 +119,7 @@
 
     </div>
 
-    <!-- Alt bölüm -->
+    <!--  -->
     <div class="bottom"></div>
 
 </body>
