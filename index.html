@@ -12,7 +12,7 @@
 
         body {
             margin: 0;
-            min-height: 150vh;
+            min-height: 100vh;
             font-family: Arial, sans-serif;
             background: #5f9f55;
         }
@@ -21,10 +21,11 @@
         .top {
             height: 35vh;
             background: linear-gradient(
-                #205f2c,
-                #286b32,
-                #3f833f,
-                #5f9f55
+                to bottom,
+                #205f2c 0%,
+                #286b32 25%,
+                #3f833f 55%,
+                #5f9f55 100%
             );
 
             display: flex;
@@ -38,14 +39,15 @@
             font-weight: bold;
         }
 
-        /*  */
+        /* */
         .buttons {
+            min-height: 30vh;
             display: flex;
             flex-direction: column;
             align-items: center;
+            justify-content: center;
             gap: 25px;
-            margin-top: 90px;
-            margin-bottom: 90px;
+            padding: 90px 0;
         }
 
         .button {
@@ -72,19 +74,16 @@
             background: #809b87;
         }
 
-        /*  - 180°  */
+        /*  */
         .bottom {
             height: 35vh;
             background: linear-gradient(
-                #5f9f55,
-                #3f833f,
-                #286b32,
-                #205f2c
+                to bottom,
+                #5f9f55 0%,
+                #3f833f 45%,
+                #286b32 75%,
+                #205f2c 100%
             );
-
-            display: flex;
-            align-items: center;
-            justify-content: center;
         }
     </style>
 </head>
@@ -104,6 +103,7 @@
             class="button"
             href="https://www.youtube.com/@SlimeManMillerVR"
             target="_blank"
+            rel="noopener noreferrer"
         >
             YOUTUBE
         </a>
@@ -113,6 +113,7 @@
             class="button"
             href="https://discord.gg/uGurHm6sd"
             target="_blank"
+            rel="noopener noreferrer"
         >
             DISCORD
         </a>
